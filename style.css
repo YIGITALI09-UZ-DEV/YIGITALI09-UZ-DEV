@@ -9,16 +9,61 @@ body {
 
 }
 .menyu{
-    position: relative;
+    position: absolute;
     top: 30px;
     left: 50px;
     z-index: 1000;
-    background-color: blue;
+    background-color: #0072ce; /* Flag blue */
     height: 230px;
     border-top-left-radius: 0;
     border-top-right-radius: 65px;
     width: 1000px;
 }
+
+.crescent {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 20px 0px 0 0 white;
+    top: 65px;
+    left: 80px;
+    transform: rotate(20deg);
+}
+
+.stars {
+    position: absolute;
+    top: 40px;
+    left: 220px;
+    width: 400px;
+    height: 150px;
+}
+
+.star {
+    position: absolute;
+    background: white;
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+/* Top row */
+.star-1 { top: 20px; left: 0; }
+.star-2 { top: 20px; left: 50px; }
+.star-3 { top: 20px; left: 100px; }
+
+/* Middle row */
+.star-4 { top: 60px; left: -25px; }
+.star-5 { top: 60px; left: 25px; }
+.star-6 { top: 60px; left: 75px; }
+.star-7 { top: 60px; left: 125px; }
+
+/* Bottom row */
+.star-8 { top: 100px; left: -50px; }
+.star-9 { top: 100px; left: 0px; }
+.star-10 { top: 100px; left: 50px; }
+.star-11 { top: 100px; left: 100px; }
+.star-12 { top: 100px; left: 150px; }
 .oq{
     position: relative;
     background-color: white;
@@ -31,7 +76,7 @@ body {
 }
 .kok{
     position: relative;
-    background-color: green;
+    background-color: #18b637; /* Flag green */
     height: 150px;
     width: 1000px;
     z-index: 1;
@@ -51,7 +96,7 @@ body {
 }
 .qizil{
     position: relative;
-    background-color: red;
+    background-color: #d50000; /* Flag red */
     height: 8px;
     left: 50px;
     width: 1000px;
@@ -61,7 +106,7 @@ body {
 }
 .qizill{
 position: relative;
-background-color: red;
+background-color: #d50000; /* Flag red */
 height: 8px;
 left: 50px;
 top: 30px;
